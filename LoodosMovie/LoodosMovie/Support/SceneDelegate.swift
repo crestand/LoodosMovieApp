@@ -20,9 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = SplashScreenVC()
+        window?.rootViewController = UINavigationController(rootViewController: SplashScreenVC())
         window?.makeKeyAndVisible()
         
+        
+        //configureNavigationBar()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
