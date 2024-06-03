@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */; };
+		8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */; };
+		8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */; };
+		8CFF24DE2C0DA41D0052CE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF24DC2C0DA41D0052CE07 /* LaunchScreen.storyboard */; };
+		8CFF24EC2C0DA8E40052CE07 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24EB2C0DA8E40052CE07 /* SplashScreenVC.swift */; };
+		8CFF24EF2C0DA9BF0052CE07 /* LMTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24EE2C0DA9BF0052CE07 /* LMTitleLabel.swift */; };
+		8CFF24F12C0DAA650052CE07 /* LMBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24F02C0DAA650052CE07 /* LMBodyLabel.swift */; };
+		8CFF24F32C0DAA980052CE07 /* LMSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24F22C0DAA980052CE07 /* LMSecondaryTitleLabel.swift */; };
+		8CFF24F62C0DAD030052CE07 /* LMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24F52C0DAD030052CE07 /* LMButton.swift */; };
+		8CFF24F92C0DAD530052CE07 /* LMAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24F82C0DAD530052CE07 /* LMAlertVC.swift */; };
+		8CFF24FC2C0DADF00052CE07 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24FB2C0DADF00052CE07 /* UIViewController+Ext.swift */; };
+		8CFF25002C0DB4F20052CE07 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24FF2C0DB4F20052CE07 /* NetworkMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFF24DD2C0DA41D0052CE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CFF24DF2C0DA41D0052CE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFF24EB2C0DA8E40052CE07 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		8CFF24EE2C0DA9BF0052CE07 /* LMTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMTitleLabel.swift; sourceTree = "<group>"; };
+		8CFF24F02C0DAA650052CE07 /* LMBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMBodyLabel.swift; sourceTree = "<group>"; };
+		8CFF24F22C0DAA980052CE07 /* LMSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		8CFF24F52C0DAD030052CE07 /* LMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMButton.swift; sourceTree = "<group>"; };
+		8CFF24F82C0DAD530052CE07 /* LMAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMAlertVC.swift; sourceTree = "<group>"; };
+		8CFF24FB2C0DADF00052CE07 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		8CFF24FF2C0DB4F20052CE07 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CFF24CB2C0DA41B0052CE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CFF24C52C0DA41B0052CE07 = {
+			isa = PBXGroup;
+			children = (
+				8CFF24D02C0DA41B0052CE07 /* LoodosMovie */,
+				8CFF24CF2C0DA41B0052CE07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CFF24CF2C0DA41B0052CE07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CFF24D02C0DA41B0052CE07 /* LoodosMovie */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24FA2C0DADB00052CE07 /* Extensions */,
+				8CFF24EA2C0DA76D0052CE07 /* Screens */,
+				8CFF24E92C0DA7660052CE07 /* Custom Views */,
+				8CFF24E72C0DA7500052CE07 /* Model */,
+				8CFF24E62C0DA7330052CE07 /* Support */,
+				8CFF24E52C0DA7200052CE07 /* Managers */,
+				8CFF24DF2C0DA41D0052CE07 /* Info.plist */,
+			);
+			path = LoodosMovie;
+			sourceTree = "<group>";
+		};
+		8CFF24E52C0DA7200052CE07 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24FF2C0DB4F20052CE07 /* NetworkMonitor.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8CFF24E62C0DA7330052CE07 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */,
+				8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */,
+				8CFF24DC2C0DA41D0052CE07 /* LaunchScreen.storyboard */,
+				8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		8CFF24E72C0DA7500052CE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CFF24E92C0DA7660052CE07 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24F72C0DAD280052CE07 /* View Controllers */,
+				8CFF24F42C0DACED0052CE07 /* Buttons */,
+				8CFF24ED2C0DA9980052CE07 /* Labels */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8CFF24EA2C0DA76D0052CE07 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24EB2C0DA8E40052CE07 /* SplashScreenVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8CFF24ED2C0DA9980052CE07 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24EE2C0DA9BF0052CE07 /* LMTitleLabel.swift */,
+				8CFF24F02C0DAA650052CE07 /* LMBodyLabel.swift */,
+				8CFF24F22C0DAA980052CE07 /* LMSecondaryTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		8CFF24F42C0DACED0052CE07 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24F52C0DAD030052CE07 /* LMButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		8CFF24F72C0DAD280052CE07 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24F82C0DAD530052CE07 /* LMAlertVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8CFF24FA2C0DADB00052CE07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF24FB2C0DADF00052CE07 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CFF24CD2C0DA41B0052CE07 /* LoodosMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFF24E22C0DA41D0052CE07 /* Build configuration list for PBXNativeTarget "LoodosMovie" */;
+			buildPhases = (
+				8CFF24CA2C0DA41B0052CE07 /* Sources */,
+				8CFF24CB2C0DA41B0052CE07 /* Frameworks */,
+				8CFF24CC2C0DA41B0052CE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoodosMovie;
+			productName = LoodosMovie;
+			productReference = 8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CFF24C62C0DA41B0052CE07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8CFF24CD2C0DA41B0052CE07 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8CFF24C92C0DA41B0052CE07 /* Build configuration list for PBXProject "LoodosMovie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CFF24C52C0DA41B0052CE07;
+			productRefGroup = 8CFF24CF2C0DA41B0052CE07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CFF24CD2C0DA41B0052CE07 /* LoodosMovie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CFF24CC2C0DA41B0052CE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFF24DE2C0DA41D0052CE07 /* LaunchScreen.storyboard in Resources */,
+				8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CFF24CA2C0DA41B0052CE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */,
+				8CFF24EF2C0DA9BF0052CE07 /* LMTitleLabel.swift in Sources */,
+				8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */,
+				8CFF24F92C0DAD530052CE07 /* LMAlertVC.swift in Sources */,
+				8CFF24EC2C0DA8E40052CE07 /* SplashScreenVC.swift in Sources */,
+				8CFF24F32C0DAA980052CE07 /* LMSecondaryTitleLabel.swift in Sources */,
+				8CFF24F62C0DAD030052CE07 /* LMButton.swift in Sources */,
+				8CFF25002C0DB4F20052CE07 /* NetworkMonitor.swift in Sources */,
+				8CFF24F12C0DAA650052CE07 /* LMBodyLabel.swift in Sources */,
+				8CFF24FC2C0DADF00052CE07 /* UIViewController+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CFF24DC2C0DA41D0052CE07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CFF24DD2C0DA41D0052CE07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CFF24E02C0DA41D0052CE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CFF24E12C0DA41D0052CE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CFF24E32C0DA41D0052CE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoodosMovie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.crestand.LoodosMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CFF24E42C0DA41D0052CE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LoodosMovie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.crestand.LoodosMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CFF24C92C0DA41B0052CE07 /* Build configuration list for PBXProject "LoodosMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFF24E02C0DA41D0052CE07 /* Debug */,
+				8CFF24E12C0DA41D0052CE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFF24E22C0DA41D0052CE07 /* Build configuration list for PBXNativeTarget "LoodosMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFF24E32C0DA41D0052CE07 /* Debug */,
+				8CFF24E42C0DA41D0052CE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CFF24C62C0DA41B0052CE07 /* Project object */;
+}
