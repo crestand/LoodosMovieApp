@@ -32,8 +32,8 @@ class LMTitleLabel: UILabel {
     private func configure() {
         textColor = .label
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.9
-        lineBreakMode = .byTruncatingTail
+        minimumScaleFactor = 0.5
+        lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
     }
     

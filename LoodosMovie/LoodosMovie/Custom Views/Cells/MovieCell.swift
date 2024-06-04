@@ -8,9 +8,10 @@
 import UIKit
 
 class MovieCell: UICollectionViewCell {
-    static let reuseID = "MovieCell"
     
+    static let reuseID = "MovieCell"
     let movieImageView = LMMovieImageView(frame: .zero)
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,9 +39,6 @@ class MovieCell: UICollectionViewCell {
             movieImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             movieImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
             movieImageView.heightAnchor.constraint(equalTo: movieImageView.widthAnchor, multiplier: 1.77),
-            
-        
-            
         ])
     }
 }

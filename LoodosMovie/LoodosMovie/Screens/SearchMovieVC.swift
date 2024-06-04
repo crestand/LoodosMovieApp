@@ -143,11 +143,11 @@ extension SearchMovieVC: UICollectionViewDelegate {
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let activeArray = isSearching ? filteredFollowers : followers
-//        let follower = activeArray[indexPath.item]
-//        
-//        let destVC = UserInfoVC()
-//        destVC.username = follower.login
+        let movie = movies[indexPath.item]
+        
+        let destVC = MovieInfoVC()
+        destVC.movieID = movie.imdbID
+        self.navigationController?.pushViewController(destVC, animated: true)
 //        let navController = UINavigationController(rootViewController: destVC)
 //        present(navController, animated: true)
     }
