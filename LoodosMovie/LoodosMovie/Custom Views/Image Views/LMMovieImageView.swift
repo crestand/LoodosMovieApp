@@ -11,7 +11,7 @@ import Alamofire
 class LMMovieImageView: UIImageView {
     
     let cache = NetworkManager.shared.cache
-    let placeholderImage = UIImage(named: "")
+    let placeholderImage = Constants.Images.moviePlaceholder
     
     
     override init(frame: CGRect) {

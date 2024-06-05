@@ -40,7 +40,7 @@ class LMRatingInfoVC: UIViewController {
         view.layer.masksToBounds = true
         ratingLabel.text = imdbRating
         
-        imdbLogoImageView.image = Constants.Logos.imdbLogo
+        imdbLogoImageView.image = Constants.Images.imdbLogo
     }
     
     

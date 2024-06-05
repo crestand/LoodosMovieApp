@@ -17,8 +17,9 @@ struct Constants {
         static let loodosColor = UIColor(red: 67/256, green: 181/256, blue: 195/256, alpha: 1)
     }
     
-    struct Logos {
+    struct Images {
         static let imdbLogo = UIImage(named: "imdb-logo")
+        static let moviePlaceholder = UIImage(named: "movie_placeholder")
     }
     
     struct Network {
