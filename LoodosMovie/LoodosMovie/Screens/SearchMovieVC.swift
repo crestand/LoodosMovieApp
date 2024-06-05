@@ -83,25 +83,28 @@ class SearchMovieVC: UIViewController {
         showLoadingView()
         NetworkManager.shared.searchMovies(for: title, page: page) { [weak self] result in
             guard let self = self else { return }
-            dismissLoadingView()
+            self.dismissLoadingView()
             switch result {
                 
             case .success(let searchResult):
-                if searchResult.search.count < 10 { self.hasMoreMovie = false}
-                self.movies.append(contentsOf: searchResult.search)
-                
-    
-                if self.movies.isEmpty {
-                    
-                    return
-                }
-                self.updateData(on: self.movies)
+                self.handleSuccess(with: searchResult.search)
                 
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Things went wrong", message: error.rawValue, buttonTitle: "Ok")
-                clearPage()
+                self.handleFailure(with: error)
             }
         }
+    }
+
+    private func handleSuccess(with newMovies: [MoviePreview]) {
+        if newMovies.count < 10 { self.hasMoreMovie = false }
+        self.movies.append(contentsOf: newMovies)
+        if self.movies.isEmpty { return }
+        self.updateData(on: self.movies)
+    }
+
+    private func handleFailure(with error: LMError) {
+        self.presentGFAlertOnMainThread(title: "Things went wrong", message: error.rawValue, buttonTitle: "Ok")
+        self.clearPage()
     }
     
     

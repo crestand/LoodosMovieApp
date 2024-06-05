@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class LMMovieImageView: UIImageView {
-
+    
     let cache = NetworkManager.shared.cache
     let placeholderImage = UIImage(named: "")
-
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,20 +42,16 @@ class LMMovieImageView: UIImageView {
         
         guard let url = URL(string: urlString) else { return }
         
-        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+        AF.request(url).responseData { [weak self] response in
             guard let self = self else { return }
-            if error != nil { return }
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { return }
-            guard let data = data else { return }
-            
-            guard let image = UIImage(data: data) else { return }
-            self.cache.setObject(image, forKey: cacheKey)
-            
-            DispatchQueue.main.async {
-                self.image = image
+            if response.error == nil {
+                guard let data = response.data else { return }
+                guard let image = UIImage(data: data) else { return }
+                self.cache.setObject(image, forKey: cacheKey)
+                DispatchQueue.main.async {
+                    self.image = image
+                }
             }
         }
-        
-        task.resume()
     }
 }

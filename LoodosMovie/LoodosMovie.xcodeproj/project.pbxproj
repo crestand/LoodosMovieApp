@@ -13,6 +13,8 @@
 		8CA692072C0F63C300B27ACF /* LMMovieRatingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA692062C0F63C300B27ACF /* LMMovieRatingInfoView.swift */; };
 		8CC0BD772C0FCFF90089F97B /* Nordique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0BD762C0FCFF90089F97B /* Nordique.ttf */; };
 		8CC0BD7D2C0FF3A00089F97B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0BD7C2C0FF3A00089F97B /* Constants.swift */; };
+		8CC0BD802C0FF89D0089F97B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC0BD7F2C0FF89D0089F97B /* Alamofire */; };
+		8CC0BD822C0FF89D0089F97B /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */; };
 		8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */; };
 		8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */; };
 		8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 				8CFF25092C0DCB130052CE07 /* FirebaseAnalyticsSwift in Frameworks */,
 				8CFF25052C0DCB130052CE07 /* FirebaseAnalytics in Frameworks */,
 				8CFF250B2C0DCB130052CE07 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				8CC0BD802C0FF89D0089F97B /* Alamofire in Frameworks */,
+				8CC0BD822C0FF89D0089F97B /* AlamofireDynamic in Frameworks */,
 				8CFF25352C0DCB130052CE07 /* FirebaseRemoteConfigSwift in Frameworks */,
 				8CFF25332C0DCB130052CE07 /* FirebaseRemoteConfig in Frameworks */,
 			);
@@ -289,6 +293,8 @@
 				8CFF250A2C0DCB130052CE07 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				8CFF25322C0DCB130052CE07 /* FirebaseRemoteConfig */,
 				8CFF25342C0DCB130052CE07 /* FirebaseRemoteConfigSwift */,
+				8CC0BD7F2C0FF89D0089F97B /* Alamofire */,
+				8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */,
 			);
 			productName = LoodosMovie;
 			productReference = 8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */;
@@ -320,6 +326,7 @@
 			mainGroup = 8CFF24C52C0DA41B0052CE07;
 			packageReferences = (
 				8CFF25032C0DCB130052CE07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 8CFF24CF2C0DA41B0052CE07 /* Products */;
 			projectDirPath = "";
@@ -587,6 +594,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		8CFF25032C0DCB130052CE07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -598,6 +613,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8CC0BD7F2C0FF89D0089F97B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
 		8CFF25042C0DCB130052CE07 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8CFF25032C0DCB130052CE07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
