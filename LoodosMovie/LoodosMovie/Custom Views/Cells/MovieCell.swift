@@ -31,14 +31,15 @@ class MovieCell: UICollectionViewCell {
     
     private func configure() {
         addSubview(movieImageView)
-        
-        let padding: CGFloat = 8
-        
+        layer.borderWidth = 1
+        layer.cornerRadius = 16
+        layer.borderColor = UIColor.black.cgColor
+
         NSLayoutConstraint.activate([
-            movieImageView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
-            movieImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-            movieImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            movieImageView.heightAnchor.constraint(equalTo: movieImageView.widthAnchor, multiplier: 1.77),
+            movieImageView.topAnchor.constraint(equalTo: topAnchor),
+            movieImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            movieImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            movieImageView.heightAnchor.constraint(equalTo: movieImageView.widthAnchor, multiplier: 16/9),
         ])
     }
 }

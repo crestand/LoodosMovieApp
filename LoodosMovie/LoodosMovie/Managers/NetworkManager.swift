@@ -10,12 +10,12 @@ import UIKit
 class NetworkManager {
     
     static let shared = NetworkManager()
-    private let baseURL = "https://www.omdbapi.com/?apikey=64e9a403"
+    private let baseURL = "https://www.omdbapi.com/?apikey=\(Constants.Network.apiKey)"
     let cache = NSCache<NSString,UIImage>()
     
     
     func searchMovies(for title: String, page: Int = 1, completed: @escaping(Result<MovieSearch, LMError>) -> Void) {
-        let endpoint = baseURL + "&s=\(title)&page=\(page)"
+        let endpoint = baseURL + "&s=\(title)&type=movie&page=\(page)"
          
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidURL))

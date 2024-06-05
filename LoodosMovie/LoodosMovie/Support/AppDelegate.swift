@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         NetworkMonitor.shared.startMonitoring()
         FirebaseApp.configure()
+        UINavigationBar.appearance().tintColor = .systemTeal
         return true
     }
 

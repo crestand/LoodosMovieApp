@@ -23,12 +23,16 @@ class SplashScreenVC: UIViewController {
         setupRemoteConfigDefaults()
         fetchRemoteConfig()
         configureSplashText()
+        
     }
     
 
     func configureSplashText() {
         view.addSubview(splashText)
-        splashText.text = RemoteConfig.remoteConfig().configValue(forKey: "splashText").stringValue
+        
+        splashText.text = RemoteConfig.remoteConfig().configValue(forKey: "splashText").stringValue?.lowercased()
+        splashText.textColor = Constants.Colors.loodosColor
+        splashText.font = Constants.Fonts.splashScreenFont
         
         NSLayoutConstraint.activate([
             splashText.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -48,7 +52,7 @@ class SplashScreenVC: UIViewController {
                 DispatchQueue.main.async { self.navigationController?.pushViewController(self.searchMovieVC, animated: true) }
             })
         } else {
-            presentGFAlertOnMainThread(title: "Connection status: offline", message: "", buttonTitle: "Ok")
+            presentGFAlertOnMainThread(title: "Network Error", message: "You are not connected to internet right now. Please try again later.", buttonTitle: "Ok")
         }
     }
     
@@ -68,10 +72,7 @@ class SplashScreenVC: UIViewController {
         
         remoteConfig.fetch(withExpirationDuration: 0) { [weak self] status, error in
             guard let self = self else { return }
-            guard error == nil else {
-                print("remote config fetch error")
-                return
-            }
+            guard error == nil else { return }
             self.remoteConfig.activate()
         }
     }

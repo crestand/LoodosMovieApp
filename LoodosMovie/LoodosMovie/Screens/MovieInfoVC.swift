@@ -12,6 +12,8 @@ class MovieInfoVC: UIViewController {
 
     let headerView = UIView()
     let moviePlotView = LMBodyLabel(textAlignment: .left)
+    let movieInfoItemView = UIView()
+    let imdbRatingInfoView = UIView()
     
     var itemViews: [UIView] = []
     var movieID: String!
@@ -49,8 +51,8 @@ class MovieInfoVC: UIViewController {
             switch result {
             case .success(let movie):
                 DispatchQueue.main.async {
-//                    print(movie)
                     self.add(childVC: LMMovieInfoHeaderVC(movie: movie), to: self.headerView)
+                    self.add(childVC: LMMovieInfoItemVC(movie: movie), to: self.movieInfoItemView)
                     self.moviePlotView.text = movie.plot
                 }
                 
@@ -58,12 +60,15 @@ class MovieInfoVC: UIViewController {
                 
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                DispatchQueue.main.async { self.navigationController?.popViewController(animated: true) }
+                
             }
         }
     }
     
     
     func layoutUI() {
+        
         view.addSubview(scrollView)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.showsVerticalScrollIndicator = false
@@ -73,9 +78,9 @@ class MovieInfoVC: UIViewController {
         let hConst = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         hConst.isActive = true
         hConst.priority = UILayoutPriority(50)
-
         configurePlotLabel()
-        itemViews = [headerView, moviePlotView]
+        
+        itemViews = [headerView, moviePlotView, movieInfoItemView, imdbRatingInfoView]
         
         
         for itemView in itemViews {
@@ -100,10 +105,15 @@ class MovieInfoVC: UIViewController {
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
             headerView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 350),
+            headerView.heightAnchor.constraint(equalToConstant: 250),
             
-            moviePlotView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
-            moviePlotView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100)
+            movieInfoItemView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 20),
+            movieInfoItemView.heightAnchor.constraint(equalToConstant: 100),
+            
+            moviePlotView.topAnchor.constraint(equalTo: movieInfoItemView.bottomAnchor, constant: 20),
+            moviePlotView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
+            moviePlotView.heightAnchor.constraint(lessThanOrEqualToConstant: 450),
+            
 
         ])
     }

@@ -17,6 +17,7 @@ class SearchMovieVC: UIViewController {
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section,MoviePreview>!
     var searchText: String = ""
+    var lastSearchText: String = ""
     
     
     override func viewDidLoad() {
@@ -89,7 +90,7 @@ class SearchMovieVC: UIViewController {
                 if searchResult.search.count < 10 { self.hasMoreMovie = false}
                 self.movies.append(contentsOf: searchResult.search)
                 
-                
+    
                 if self.movies.isEmpty {
                     
                     return
@@ -98,8 +99,17 @@ class SearchMovieVC: UIViewController {
                 
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Things went wrong", message: error.rawValue, buttonTitle: "Ok")
+                clearPage()
             }
         }
+    }
+    
+    
+    func clearPage() {
+        movies.removeAll()
+        page = 1
+        searchText = ""
+        updateData(on: movies)
     }
     
 }
@@ -108,22 +118,15 @@ class SearchMovieVC: UIViewController {
 extension SearchMovieVC: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        if searchText.elementsEqual(searchBar.text?.lowercased() ?? "") {
-            return
+        if let searchBarText = searchBar.text?.lowercased(), !searchBarText.isEmpty, !searchText.elementsEqual(searchBarText) {
+            lastSearchText = searchText
+            searchText = searchBarText
+            page = 1
+            movies.removeAll(keepingCapacity: true)
+            getMovies(title: searchText, page: page)
         }
-        searchText = searchBar.text?.lowercased() ?? ""
-        page = 1
-        movies.removeAll(keepingCapacity: true)
-        getMovies(title: searchText, page: page)
-        
+
     }
-    
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//        print("cancel clicked")
-    }
-    
 }
 
 
@@ -144,11 +147,8 @@ extension SearchMovieVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movie = movies[indexPath.item]
-        
         let destVC = MovieInfoVC()
         destVC.movieID = movie.imdbID
         self.navigationController?.pushViewController(destVC, animated: true)
-//        let navController = UINavigationController(rootViewController: destVC)
-//        present(navController, animated: true)
     }
 }

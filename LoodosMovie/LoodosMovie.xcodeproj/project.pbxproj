@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CA691FE2C0F54C800B27ACF /* LMRatingInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA691FD2C0F54C800B27ACF /* LMRatingInfoVC.swift */; };
+		8CA692002C0F570600B27ACF /* LMMovieInfoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA691FF2C0F570600B27ACF /* LMMovieInfoItemVC.swift */; };
+		8CA692032C0F621500B27ACF /* LMDirectorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA692022C0F621500B27ACF /* LMDirectorInfoView.swift */; };
+		8CA692072C0F63C300B27ACF /* LMMovieRatingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA692062C0F63C300B27ACF /* LMMovieRatingInfoView.swift */; };
+		8CC0BD772C0FCFF90089F97B /* Nordique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0BD762C0FCFF90089F97B /* Nordique.ttf */; };
+		8CC0BD7D2C0FF3A00089F97B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0BD7C2C0FF3A00089F97B /* Constants.swift */; };
 		8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */; };
 		8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */; };
 		8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */; };
@@ -41,6 +47,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CA691FD2C0F54C800B27ACF /* LMRatingInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMRatingInfoVC.swift; sourceTree = "<group>"; };
+		8CA691FF2C0F570600B27ACF /* LMMovieInfoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMMovieInfoItemVC.swift; sourceTree = "<group>"; };
+		8CA692022C0F621500B27ACF /* LMDirectorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMDirectorInfoView.swift; sourceTree = "<group>"; };
+		8CA692062C0F63C300B27ACF /* LMMovieRatingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMMovieRatingInfoView.swift; sourceTree = "<group>"; };
+		8CC0BD762C0FCFF90089F97B /* Nordique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nordique.ttf; sourceTree = "<group>"; };
+		8CC0BD7C2C0FF3A00089F97B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CA692012C0F61F500B27ACF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CA692022C0F621500B27ACF /* LMDirectorInfoView.swift */,
+				8CA692062C0F63C300B27ACF /* LMMovieRatingInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CC0BD752C0FCFD60089F97B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0BD762C0FCFF90089F97B /* Nordique.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		8CFF24C52C0DA41B0052CE07 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +181,7 @@
 		8CFF24E92C0DA7660052CE07 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				8CA692012C0F61F500B27ACF /* Views */,
 				8CFF254B2C0E0A790052CE07 /* Image Views */,
 				8CFF25482C0E055A0052CE07 /* Cells */,
 				8CFF24F72C0DAD280052CE07 /* View Controllers */,
@@ -194,6 +224,8 @@
 			children = (
 				8CFF24F82C0DAD530052CE07 /* LMAlertVC.swift */,
 				8CFF25542C0E5C1B0052CE07 /* LMMovieInfoHeaderVC.swift */,
+				8CA691FD2C0F54C800B27ACF /* LMRatingInfoVC.swift */,
+				8CA691FF2C0F570600B27ACF /* LMMovieInfoItemVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -211,8 +243,10 @@
 		8CFF25452C0DFD270052CE07 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8CC0BD752C0FCFD60089F97B /* Fonts */,
 				8CFF254E2C0E12050052CE07 /* UIHelper.swift */,
 				8CFF25462C0DFD450052CE07 /* LMError.swift */,
+				8CC0BD7C2C0FF3A00089F97B /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -304,6 +338,7 @@
 				8CFF24DE2C0DA41D0052CE07 /* LaunchScreen.storyboard in Resources */,
 				8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */,
 				8CFF25022C0DC8C20052CE07 /* GoogleService-Info.plist in Resources */,
+				8CC0BD772C0FCFF90089F97B /* Nordique.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +354,7 @@
 				8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */,
 				8CFF24EF2C0DA9BF0052CE07 /* LMTitleLabel.swift in Sources */,
 				8CFF25422C0DEC580052CE07 /* MovieSearch.swift in Sources */,
+				8CC0BD7D2C0FF3A00089F97B /* Constants.swift in Sources */,
 				8CFF253D2C0DD84B0052CE07 /* SearchMovieVC.swift in Sources */,
 				8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */,
 				8CFF254F2C0E12050052CE07 /* UIHelper.swift in Sources */,
@@ -328,11 +364,15 @@
 				8CFF254D2C0E0ACA0052CE07 /* LMMovieImageView.swift in Sources */,
 				8CFF24F32C0DAA980052CE07 /* LMSecondaryTitleLabel.swift in Sources */,
 				8CFF25552C0E5C1B0052CE07 /* LMMovieInfoHeaderVC.swift in Sources */,
+				8CA692002C0F570600B27ACF /* LMMovieInfoItemVC.swift in Sources */,
 				8CFF24F62C0DAD030052CE07 /* LMButton.swift in Sources */,
 				8CFF25002C0DB4F20052CE07 /* NetworkMonitor.swift in Sources */,
 				8CFF254A2C0E09E60052CE07 /* MovieCell.swift in Sources */,
+				8CA691FE2C0F54C800B27ACF /* LMRatingInfoVC.swift in Sources */,
 				8CFF25472C0DFD450052CE07 /* LMError.swift in Sources */,
 				8CFF25442C0DED420052CE07 /* NetworkManager.swift in Sources */,
+				8CA692072C0F63C300B27ACF /* LMMovieRatingInfoView.swift in Sources */,
+				8CA692032C0F621500B27ACF /* LMDirectorInfoView.swift in Sources */,
 				8CFF24F12C0DAA650052CE07 /* LMBodyLabel.swift in Sources */,
 				8CFF24FC2C0DADF00052CE07 /* UIViewController+Ext.swift in Sources */,
 				8CFF255B2C0E89D60052CE07 /* UILabel+Ext.swift in Sources */,
