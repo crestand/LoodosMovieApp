@@ -15,8 +15,6 @@ extension UILabel {
         let lineHeight = font.lineHeight
         return Int(ceil(textHeight / lineHeight))
     }
-    
-    
-    
+  
 }
 

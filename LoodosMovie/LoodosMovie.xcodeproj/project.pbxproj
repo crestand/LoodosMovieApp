@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C267C8A2C10F7F6009B3996 /* SharedTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C892C10F7F6009B3996 /* SharedTransitionAnimator.swift */; };
+		8C267C8C2C10FBD2009B3996 /* CGAffineTransform+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C8B2C10FBD2009B3996 /* CGAffineTransform+Ext.swift */; };
+		8C267C942C1131AA009B3996 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8C267C932C1131AA009B3996 /* Alamofire */; };
+		8C267C962C11420D009B3996 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C952C11420D009B3996 /* UIView+Ext.swift */; };
+		8C267C982C1142E6009B3996 /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C972C1142E6009B3996 /* CGRect+Ext.swift */; };
+		8C267C9A2C114379009B3996 /* UIViewControllerContextTransitioning+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C992C114379009B3996 /* UIViewControllerContextTransitioning+Ext.swift */; };
+		8C267C9C2C11473A009B3996 /* CircleMaskTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C267C9B2C11473A009B3996 /* CircleMaskTransitionAnimator.swift */; };
 		8CA691FE2C0F54C800B27ACF /* LMRatingInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA691FD2C0F54C800B27ACF /* LMRatingInfoVC.swift */; };
 		8CA692002C0F570600B27ACF /* LMMovieInfoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA691FF2C0F570600B27ACF /* LMMovieInfoItemVC.swift */; };
 		8CA692032C0F621500B27ACF /* LMDirectorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA692022C0F621500B27ACF /* LMDirectorInfoView.swift */; };
 		8CA692072C0F63C300B27ACF /* LMMovieRatingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA692062C0F63C300B27ACF /* LMMovieRatingInfoView.swift */; };
 		8CC0BD772C0FCFF90089F97B /* Nordique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0BD762C0FCFF90089F97B /* Nordique.ttf */; };
 		8CC0BD7D2C0FF3A00089F97B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0BD7C2C0FF3A00089F97B /* Constants.swift */; };
-		8CC0BD802C0FF89D0089F97B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC0BD7F2C0FF89D0089F97B /* Alamofire */; };
-		8CC0BD822C0FF89D0089F97B /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */; };
 		8CFF24D22C0DA41B0052CE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D12C0DA41B0052CE07 /* AppDelegate.swift */; };
 		8CFF24D42C0DA41B0052CE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF24D32C0DA41B0052CE07 /* SceneDelegate.swift */; };
 		8CFF24DB2C0DA41D0052CE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF24DA2C0DA41D0052CE07 /* Assets.xcassets */; };
@@ -49,6 +54,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C267C892C10F7F6009B3996 /* SharedTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTransitionAnimator.swift; sourceTree = "<group>"; };
+		8C267C8B2C10FBD2009B3996 /* CGAffineTransform+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Ext.swift"; sourceTree = "<group>"; };
+		8C267C952C11420D009B3996 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		8C267C972C1142E6009B3996 /* CGRect+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
+		8C267C992C114379009B3996 /* UIViewControllerContextTransitioning+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllerContextTransitioning+Ext.swift"; sourceTree = "<group>"; };
+		8C267C9B2C11473A009B3996 /* CircleMaskTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMaskTransitionAnimator.swift; sourceTree = "<group>"; };
 		8CA691FD2C0F54C800B27ACF /* LMRatingInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMRatingInfoVC.swift; sourceTree = "<group>"; };
 		8CA691FF2C0F570600B27ACF /* LMMovieInfoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMMovieInfoItemVC.swift; sourceTree = "<group>"; };
 		8CA692022C0F621500B27ACF /* LMDirectorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMDirectorInfoView.swift; sourceTree = "<group>"; };
@@ -93,8 +104,7 @@
 				8CFF25092C0DCB130052CE07 /* FirebaseAnalyticsSwift in Frameworks */,
 				8CFF25052C0DCB130052CE07 /* FirebaseAnalytics in Frameworks */,
 				8CFF250B2C0DCB130052CE07 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
-				8CC0BD802C0FF89D0089F97B /* Alamofire in Frameworks */,
-				8CC0BD822C0FF89D0089F97B /* AlamofireDynamic in Frameworks */,
+				8C267C942C1131AA009B3996 /* Alamofire in Frameworks */,
 				8CFF25352C0DCB130052CE07 /* FirebaseRemoteConfigSwift in Frameworks */,
 				8CFF25332C0DCB130052CE07 /* FirebaseRemoteConfig in Frameworks */,
 			);
@@ -103,6 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C267C922C1131AA009B3996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C267C9D2C1158F4009B3996 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				8C267C9B2C11473A009B3996 /* CircleMaskTransitionAnimator.swift */,
+				8C267C892C10F7F6009B3996 /* SharedTransitionAnimator.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
 		8CA692012C0F61F500B27ACF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +151,7 @@
 			children = (
 				8CFF24D02C0DA41B0052CE07 /* LoodosMovie */,
 				8CFF24CF2C0DA41B0052CE07 /* Products */,
+				8C267C922C1131AA009B3996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +166,7 @@
 		8CFF24D02C0DA41B0052CE07 /* LoodosMovie */ = {
 			isa = PBXGroup;
 			children = (
+				8C267C9D2C1158F4009B3996 /* Transitions */,
 				8CFF25452C0DFD270052CE07 /* Utilities */,
 				8CFF24FA2C0DADB00052CE07 /* Extensions */,
 				8CFF24EA2C0DA76D0052CE07 /* Screens */,
@@ -240,6 +268,10 @@
 				8CFF24FB2C0DADF00052CE07 /* UIViewController+Ext.swift */,
 				8CFF25562C0E83450052CE07 /* UIImageView+Ext.swift */,
 				8CFF255A2C0E89D60052CE07 /* UILabel+Ext.swift */,
+				8C267C8B2C10FBD2009B3996 /* CGAffineTransform+Ext.swift */,
+				8C267C952C11420D009B3996 /* UIView+Ext.swift */,
+				8C267C972C1142E6009B3996 /* CGRect+Ext.swift */,
+				8C267C992C114379009B3996 /* UIViewControllerContextTransitioning+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,8 +325,7 @@
 				8CFF250A2C0DCB130052CE07 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				8CFF25322C0DCB130052CE07 /* FirebaseRemoteConfig */,
 				8CFF25342C0DCB130052CE07 /* FirebaseRemoteConfigSwift */,
-				8CC0BD7F2C0FF89D0089F97B /* Alamofire */,
-				8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */,
+				8C267C932C1131AA009B3996 /* Alamofire */,
 			);
 			productName = LoodosMovie;
 			productReference = 8CFF24CE2C0DA41B0052CE07 /* LoodosMovie.app */;
@@ -327,6 +358,7 @@
 			packageReferences = (
 				8CFF25032C0DCB130052CE07 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8C267C8F2C11010D009B3996 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 8CFF24CF2C0DA41B0052CE07 /* Products */;
 			projectDirPath = "";
@@ -369,21 +401,27 @@
 				8CFF24EC2C0DA8E40052CE07 /* SplashScreenVC.swift in Sources */,
 				8CFF25532C0E57FC0052CE07 /* MovieInfoVC.swift in Sources */,
 				8CFF254D2C0E0ACA0052CE07 /* LMMovieImageView.swift in Sources */,
+				8C267C962C11420D009B3996 /* UIView+Ext.swift in Sources */,
 				8CFF24F32C0DAA980052CE07 /* LMSecondaryTitleLabel.swift in Sources */,
 				8CFF25552C0E5C1B0052CE07 /* LMMovieInfoHeaderVC.swift in Sources */,
 				8CA692002C0F570600B27ACF /* LMMovieInfoItemVC.swift in Sources */,
 				8CFF24F62C0DAD030052CE07 /* LMButton.swift in Sources */,
+				8C267C8A2C10F7F6009B3996 /* SharedTransitionAnimator.swift in Sources */,
 				8CFF25002C0DB4F20052CE07 /* NetworkMonitor.swift in Sources */,
 				8CFF254A2C0E09E60052CE07 /* MovieCell.swift in Sources */,
+				8C267C9C2C11473A009B3996 /* CircleMaskTransitionAnimator.swift in Sources */,
 				8CA691FE2C0F54C800B27ACF /* LMRatingInfoVC.swift in Sources */,
 				8CFF25472C0DFD450052CE07 /* LMError.swift in Sources */,
 				8CFF25442C0DED420052CE07 /* NetworkManager.swift in Sources */,
+				8C267C9A2C114379009B3996 /* UIViewControllerContextTransitioning+Ext.swift in Sources */,
+				8C267C8C2C10FBD2009B3996 /* CGAffineTransform+Ext.swift in Sources */,
 				8CA692072C0F63C300B27ACF /* LMMovieRatingInfoView.swift in Sources */,
 				8CA692032C0F621500B27ACF /* LMDirectorInfoView.swift in Sources */,
 				8CFF24F12C0DAA650052CE07 /* LMBodyLabel.swift in Sources */,
 				8CFF24FC2C0DADF00052CE07 /* UIViewController+Ext.swift in Sources */,
 				8CFF255B2C0E89D60052CE07 /* UILabel+Ext.swift in Sources */,
 				8CFF25402C0DEB1C0052CE07 /* MoviePreview.swift in Sources */,
+				8C267C982C1142E6009B3996 /* CGRect+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5ZPCKC2F9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoodosMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -552,6 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S5ZPCKC2F9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoodosMovie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +634,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8C267C8F2C11010D009B3996 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -613,15 +661,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8CC0BD7F2C0FF89D0089F97B /* Alamofire */ = {
+		8C267C932C1131AA009B3996 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		8CC0BD812C0FF89D0089F97B /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8CC0BD7E2C0FF89D0089F97B /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 		8CFF25042C0DCB130052CE07 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

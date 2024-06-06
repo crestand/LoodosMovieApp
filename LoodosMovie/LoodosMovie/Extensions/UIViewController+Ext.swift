@@ -50,4 +50,17 @@ extension UIViewController {
         }
     }
     
+    
+    
+    func findChildViewController<T: UIViewController>(ofType type: T.Type) -> T? {
+        for child in children {
+            if let viewController = child as? T {
+                return viewController
+            }
+        }
+        return nil
+    }
+    
+    
+    
 }

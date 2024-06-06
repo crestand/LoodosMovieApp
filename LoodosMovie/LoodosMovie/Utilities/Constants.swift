@@ -10,7 +10,10 @@ import UIKit
 struct Constants {
     
     struct Fonts {
-        static let splashScreenFont = UIFont(name: "NordiquePro-Bold", size: 60)
+
+        static func splashScreenFont(size: CGFloat) -> UIFont {
+            UIFont(name: "NordiquePro-Bold", size: size)!
+        }
     }
     
     struct Colors {

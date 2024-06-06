@@ -95,5 +95,10 @@ class LMMovieInfoHeaderVC: UIViewController {
         ])
     }
     
+    
+    func getMovieImageView() -> UIImageView {
+        movieImageView
+    }
+    
 
 }

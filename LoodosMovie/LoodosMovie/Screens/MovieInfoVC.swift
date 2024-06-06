@@ -9,11 +9,12 @@ import UIKit
 import FirebaseAnalytics
 
 class MovieInfoVC: UIViewController {
-
+    
     let headerView = UIView()
     let moviePlotView = LMBodyLabel(textAlignment: .left)
     let movieInfoItemView = UIView()
     let imdbRatingInfoView = UIView()
+    let transitionTargetFallback = UIView()
     
     var itemViews: [UIView] = []
     var movieID: String!
@@ -75,6 +76,12 @@ class MovieInfoVC: UIViewController {
         scrollView.addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
+        transitionTargetFallback.backgroundColor = .systemRed
+        transitionTargetFallback.layer.opacity = 0.01
+        transitionTargetFallback.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(transitionTargetFallback)
+        
+        
         let hConst = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         hConst.isActive = true
         hConst.priority = UILayoutPriority(50)
@@ -95,7 +102,7 @@ class MovieInfoVC: UIViewController {
         
         NSLayoutConstraint.activate([
             
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -114,7 +121,10 @@ class MovieInfoVC: UIViewController {
             moviePlotView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
             moviePlotView.heightAnchor.constraint(lessThanOrEqualToConstant: 450),
             
-
+            transitionTargetFallback.topAnchor.constraint(equalTo: view.topAnchor, constant: 105),
+            transitionTargetFallback.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            transitionTargetFallback.widthAnchor.constraint(equalToConstant: 130),
+            transitionTargetFallback.heightAnchor.constraint(equalTo: transitionTargetFallback.widthAnchor, multiplier: 16/9),
         ])
     }
     
@@ -135,15 +145,25 @@ class MovieInfoVC: UIViewController {
         childVC.didMove(toParent: self)
     }
     
-
+    
     func logEvent(movie: Movie) {
         Analytics.logEvent("movie_selected", parameters: [
             "movie_title": movie.title,
             "movie_id": movie.imdbID,
             
-          AnalyticsParameterContentType: "cont",
+            AnalyticsParameterContentType: "cont",
         ])
     }
-    
-
 }
+
+extension MovieInfoVC: SharedTransitioning {
+    var sharedFrame: CGRect {
+        
+        if let headerVC = findChildViewController(ofType: LMMovieInfoHeaderVC.self) {
+            let targetImage = headerVC.getMovieImageView()
+            return targetImage.frameInWindow ?? .zero
+        }
+        return transitionTargetFallback.frameInWindow ?? .zero
+    }
+}
+
